@@ -29,7 +29,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
-        <Footer/>
+        {/*<Footer/>*/}
       </div>
   )
 };
