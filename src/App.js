@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import './App.css';
 import Header from "./components/Header";
 import Login from "./components/Login";
@@ -7,6 +7,8 @@ import Logout from "./components/Logout";
 import Home from "./components/Home";
 import Products from "./components/Products";
 import SignUp from "./components/SignUp";
+import ErrorPage from "./components/ErrorPage";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -21,9 +23,16 @@ function App() {
           <Route path="/products" element={<Products/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<Home/>}/>
+          <Route path="*" element={<ErrorPage/>}/>
         </Routes>
+        <Footer/>
       </div>
   )
-}
+};
 
 export default App;
+
+
+
+
+
