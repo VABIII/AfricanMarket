@@ -7,6 +7,7 @@ import Logout from "./components/Logout";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import Products from "./components/Products";
+import SignUp from "./components/SignUp";
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
         <Home/>
         <Logout/>
         <Login/>
-        <Product/>
         <Products/>
+        <Product/>
+        <SignUp/>
       </div>
   )
 }
