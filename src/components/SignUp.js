@@ -13,8 +13,8 @@ const SignUp = () => {
             .then(res => {
                 const user = res.data;
                 console.log(user);
-                }
-            )
+                setUser(user);
+                })
             .catch(err => {
                 console.error(err);
             });
@@ -33,6 +33,7 @@ const SignUp = () => {
     const onSubmit = evt => {
         evt.preventDefault();
         setUser(values);
+        // addNewUser();
     };
 
 
