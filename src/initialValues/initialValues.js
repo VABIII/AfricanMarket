@@ -105,6 +105,7 @@ export const signupInitialValues = {
     lastName: "",
     businessName:"",
     jobTitle: "",
+    location: "",
     avatarImg: "",
     password: ""
 };
@@ -127,7 +128,9 @@ export const newUser = {
     lastName: "Howlett",
     businessName: "Patches, Inc",
     jobTitle: "Chief of Operations",
-    avatarImg: ""
+    location: "Burma",
+    avatarImg: "",
+    password: ""
 };
 
 export const signUpErrors = {

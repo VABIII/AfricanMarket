@@ -92,6 +92,15 @@ const SignUp = () => {
                         />
                     </div>
                     <div>
+                        <label>Location:&nbsp;</label>
+                        <input
+                            type="text"
+                            name="location"
+                            value={values.location}
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div>
                         <label>Profile Picture:&nbsp;</label>
                         <input
                             type="text"
