@@ -130,7 +130,9 @@ export const newUser = {
     avatarImg: ""
 };
 
-
+export const signUpErrors = {
+    error: ""
+}
 
 
 

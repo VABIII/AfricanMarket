@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import {signupInitialValues} from "../initialValues/initialValues";
+import {signupInitialValues, signUpErrors} from "../initialValues/initialValues";
 
 
 const SignUp = () => {
     const [values, setValues] = useState(signupInitialValues);
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState(signupInitialValues);
+    const [errors,setErrors] = useState(signUpErrors);
     console.log(user)
 
     const addNewUser = () => {
@@ -16,7 +17,8 @@ const SignUp = () => {
                 setUser(user);
                 })
             .catch(err => {
-                console.error(err);
+                // console.error(err);
+                setErrors(err.response.data)
             });
     };
 
@@ -109,6 +111,7 @@ const SignUp = () => {
                     </div>
                     <button>Submit</button>
                 </form>
+                <p>{errors.error}</p>
             </div>
         </div>
     );
