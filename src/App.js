@@ -11,7 +11,7 @@ import ErrorPage from "./components/ErrorPage";
 import UserProfile from "./components/UserProfile";
 import About from "./components/About";
 import {ProductsPrivateRoute, UserPrivateRoute, LogoutPrivateRoute, AboutPrivateRoute} from "./components/PrivateRoute";
-
+import BackupProducts from "./components/BackupProducts";
 
 function App() {
     const test = "test"
@@ -25,6 +25,7 @@ function App() {
                 <Route path="" element={Logout}/>
             </Route>
 
+            {/*<Route path="/products/*" element={<BackupProducts/>}/>*/}
 
             <Route path="/products/*" element={<ProductsPrivateRoute/>}>
                 <Route path="" element={<UserProfile/>}/>

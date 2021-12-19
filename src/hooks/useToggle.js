@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const useToggle = (initialState = false) => {
     const [state, setState] = React.useState(initialState);
 
@@ -13,7 +12,6 @@ const useToggle = (initialState = false) => {
 
     return [state, handlers];
 };
-
 
 export default useToggle;
 
