@@ -13,19 +13,22 @@ export const signUpErrors = {
 
 
 const Login = () => {
-    const [values, setValues] = useState(loginInitialValues)
-    const [error, setError] = useState(signUpErrors)
+    const [values, setValues] = useState(loginInitialValues);
+    const [error, setError] = useState(signUpErrors);
+    const setToken = () => localStorage.setItem("token", "token");
+
 
     const login = creds => {
         axios.post(``, creds)
-            .then( () => {
+            .then( res => {
+                const token = res.data.token;
+                localStorage.setItem("token", token);
                 window.location.href = "/products";
             })
             .catch(err => {
                 setError(err.response.data);
-            })
-
-    }
+            });
+    };
 
 
     const onChange = evt => {
@@ -40,7 +43,10 @@ const Login = () => {
 
     const onSubmit = evt => {
         evt.preventDefault();
-        login(values);
+        // login(values);
+        // TODO: delete setToken and wlh and uncomment logi()
+        setToken();
+        window.location.href="/products";
     };
 
     return (

@@ -18,24 +18,24 @@ const Header = () => {
     // removeToken();
 
     return (
-            // <nav className="header-navs">
-            //     <Link id="home" to="/">Home</Link>
-            //     {!token && <Link id="login" to="/login">Login</Link>}
-            //     {!token && <Link id="signup" to="/signup">Sign Up</Link>}
-            //     {token && <Link id="products" to="/products">Products</Link>}
-            //     {token && <Link id="user" to="/user">My Profile</Link>}
-            //     <Link id="about" to="/about">About</Link>
-            //     {token && <Link id="logout" to="/logout">Logout</Link>}
-            // </nav>
             <nav className="header-navs">
                 <Link id="home" to="/">Home</Link>
-                <Link id="login" to="/login">Login</Link>
-                <Link id="signup" to="/signup">Sign Up</Link>
-                <Link id="products" to="/products">Products</Link>
-                <Link id="user" to="/user">My Profile</Link>
+                {!token && <Link id="login" to="/login">Login</Link>}
+                {!token && <Link id="signup" to="/signup">Sign Up</Link>}
+                {token && <Link id="products" to="/products">Products</Link>}
+                {token && <Link id="user" to="/user">My Profile</Link>}
                 <Link id="about" to="/about">About</Link>
-                <Link id="logout" to="/logout">Logout</Link>
+                {token && <Link id="logout" to="/logout">Logout</Link>}
             </nav>
+            // <nav className="header-navs">
+            //     <Link id="home" to="/">Home</Link>
+            //     <Link id="login" to="/login">Login</Link>
+            //     <Link id="signup" to="/signup">Sign Up</Link>
+            //     <Link id="products" to="/products">Products</Link>
+            //     <Link id="user" to="/user">My Profile</Link>
+            //     <Link id="about" to="/about">About</Link>
+            //     <Link id="logout" to="/logout">Logout</Link>
+            // </nav>
     );
 };
 
