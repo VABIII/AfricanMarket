@@ -10,26 +10,47 @@ import SignUp from "./components/SignUp";
 import ErrorPage from "./components/ErrorPage";
 import UserProfile from "./components/UserProfile";
 import About from "./components/About";
+import {ProductsPrivateRoute, UserPrivateRoute, LogoutPrivateRoute, AboutPrivateRoute} from "./components/PrivateRoute";
 
 
 function App() {
+    const test = "test"
+
 
   return(
       <div className="app-container">
         <Header/>
         <Routes>
-          <Route path="/logout" element={<Logout/>}/>
-          <Route path="/user" element={<UserProfile/>}/>
+            <Route path="/logout/*" element={<LogoutPrivateRoute/>}>
+                <Route path="" element={Logout}/>
+            </Route>
+
+
+            <Route path="/products/*" element={<ProductsPrivateRoute/>}>
+                <Route path="" element={<UserProfile/>}/>
+            </Route>
+
+            <Route path='/user' element={<UserPrivateRoute/>}>
+                <Route path="" element={<Products/>}/>
+            </Route>
+
+            <Route
+                path="/about/*"
+                element={
+                    <AboutPrivateRoute>
+                        <About test={test}/>
+                    </AboutPrivateRoute>
+                }
+            />
+
           <Route path="/login" element={<Login/>}/>
-          <Route path="/products/*" element={<Products/>}/>
-          <Route path="/about" element={<About/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
       </div>
   )
-};
+}
 
 export default App;
 

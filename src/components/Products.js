@@ -6,9 +6,13 @@ import AddProduct from "./AddProduct";
 import Product from "./Product";
 import "../styles/Products.css"
 
+// TODO: Style and Position NavLinks & make sure products state is updated to reflect changes made by axios call
 
-const Products = () => {
+
+const Products = props => {
     const [products, setProducts] = useState(productArray);
+    const {test} = props;
+    console.log(test)
 
 
     // useEffect(() => {

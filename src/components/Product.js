@@ -6,8 +6,6 @@ import "../styles/Product.css"
 const Product = props => {
     const [toggle, setToggle] = useState(false)
     const { product } = props;
-    // console.log(product);
-    console.log(toggle);
 
     const onClick = () => {
         setToggle(!toggle)
@@ -17,8 +15,6 @@ const Product = props => {
         <div className="product-container">
             <div className="product-display">
                 <h1 onClick={onClick}>{product.productName}</h1>
-                {/*<h4>{product.location}</h4>*/}
-                {/*<p>{product.productPrice}</p>*/}
                 <div className="product-info-container">
                     {toggle && <ProductInfo product={product}/>}
                 </div>
