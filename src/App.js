@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import './App.css';
 import Header from "./components/Header";
@@ -8,13 +8,11 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import SignUp from "./components/SignUp";
 import ErrorPage from "./components/ErrorPage";
-import Footer from "./components/Footer";
 import UserProfile from "./components/UserProfile";
 import About from "./components/About";
 
 
 function App() {
-
 
   return(
       <div className="app-container">
@@ -23,13 +21,12 @@ function App() {
           <Route path="/logout" element={<Logout/>}/>
           <Route path="/user" element={<UserProfile/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/products" element={<Products/>}/>
+          <Route path="/products/*" element={<Products/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
-        {/*<Footer/>*/}
       </div>
   )
 };
