@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import {Route, Routes, NavLink} from "react-router-dom";
+import useToggle from "../hooks/useToggle";
 import { productArray } from "../initialValues/initialValues";
 import AddProduct from "./AddProduct";
 import Product from "./Product";
@@ -11,8 +12,9 @@ import "../styles/Products.css"
 
 const Products = props => {
     const [products, setProducts] = useState(productArray);
-    const {test} = props;
-    console.log(test)
+    const [ isNAToggled, {toggle: toggleNorthAfrica}] = useToggle(false);
+    const [ isCAToggled, {toggle: toggleSouthAfrica}] = useToggle(false);
+    const [ isSAToggled, {toggle: toggleCentralAfrica}] = useToggle(false);
 
 
     // useEffect(() => {
@@ -26,10 +28,11 @@ const Products = props => {
     //
     // }, []);
 
+
     return (
         <div className="products-container">
             <div className="products-title">
-                <strong><h1>Products</h1></strong>
+                <strong><h1 onClick={toggleNorthAfrica}>Products</h1></strong>
             </div>
             <div>
                 <nav>
