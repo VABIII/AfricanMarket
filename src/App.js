@@ -10,12 +10,12 @@ import SignUp from "./components/SignUp";
 import ErrorPage from "./components/ErrorPage";
 import UserProfile from "./components/UserProfile";
 import About from "./components/About";
-import {ProductsPrivateRoute, UserPrivateRoute, LogoutPrivateRoute, AboutPrivateRoute} from "./components/PrivateRoute";
-import BackupProducts from "./components/BackupProducts";
+import {ProductsPrivateRoute, UserPrivateRoute,
+    LogoutPrivateRoute, AboutPrivateRoute}
+    from "./components/PrivateRoute";
+
 
 function App() {
-    const test = "test"
-
 
   return(
       <div className="app-container">
@@ -25,8 +25,6 @@ function App() {
                 <Route path="" element={Logout}/>
             </Route>
 
-            {/*<Route path="/products/*" element={<BackupProducts/>}/>*/}
-
             <Route path="/products/*" element={<ProductsPrivateRoute/>}>
                 <Route path="" element={<UserProfile/>}/>
             </Route>
@@ -34,7 +32,7 @@ function App() {
             <Route path='/user' element={<UserPrivateRoute/>}>
                 <Route path="" element={<Products/>}/>
             </Route>
-
+            {/*Use the format below if you need to pass props to the component*/}
             <Route
                 path="/about/*"
                 element={
@@ -43,7 +41,6 @@ function App() {
                     </AboutPrivateRoute>
                 }
             />
-
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<Home/>}/>
