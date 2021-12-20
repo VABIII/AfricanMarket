@@ -37,7 +37,7 @@ function App() {
                 path="/about/*"
                 element={
                     <AboutPrivateRoute>
-                        <About test={test}/>
+                        <About/>
                     </AboutPrivateRoute>
                 }
             />

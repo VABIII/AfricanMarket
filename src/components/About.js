@@ -1,8 +1,6 @@
 import React from 'react';
 
-const About = (props) => {
-    const {test} = props;
-    console.log(test);
+const About = props => {
 
     return (
         <div>
