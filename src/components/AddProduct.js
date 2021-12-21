@@ -40,7 +40,6 @@ const AddProduct = () => {
             addNewProduct(values);
         // TODO: update product application state to reflect change to db
         // TODO: push to a location after submission
-
     };
 
 
@@ -58,28 +57,28 @@ const AddProduct = () => {
                         value={values.productName}
                         onChange={onChange}
                     />
-                    <label>Price:&nbsp;</label>
+                    <label>&nbsp;Price:&nbsp;</label>
                     <input
                         type="text"
                         name="productPrice"
                         value={values.productPrice}
                         onChange={onChange}
                     />
-                    <label>Product Description:&nbsp;</label>
+                    <label>&nbsp;Product Description:&nbsp;</label>
                     <input
                         type="text"
                         name="productDescription"
                         value={values.productDescription}
                         onChange={onChange}
                     />
-                    <label>Location:&nbsp;</label>
+                    <label>&nbsp;Location:&nbsp;</label>
                     <input
                         type="text"
                         name="location"
                         value={values.location}
                         onChange={onChange}
                     />
-                    <button>Add</button>
+                    &nbsp;<button>Add</button>
                 </form>
             </div>
         </div>

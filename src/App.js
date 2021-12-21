@@ -21,11 +21,7 @@ function App() {
       <div className="app-container">
         <Header/>
         <Routes>
-            <Route path="/logout/*" element={<LogoutPrivateRoute/>}>
-                <Route path="" element={Logout}/>
-            </Route>
-
-            <Route path="/products/*" element={<ProductsPrivateRoute/>}>
+            <Route exact path="/products/*" element={<ProductsPrivateRoute/>}>
                 <Route path="" element={<UserProfile/>}/>
             </Route>
 
@@ -34,13 +30,14 @@ function App() {
             </Route>
             {/*Use the format below if you need to pass props to the component*/}
             <Route
-                path="/about/*"
+                path="/logout/*"
                 element={
-                    <AboutPrivateRoute>
-                        <About/>
-                    </AboutPrivateRoute>
+                    <LogoutPrivateRoute>
+                        <Logout/>
+                    </LogoutPrivateRoute>
                 }
             />
+          <Route path="/about" element={<About/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<Home/>}/>
