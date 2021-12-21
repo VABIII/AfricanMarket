@@ -13,7 +13,6 @@ import About from "./components/About";
 import {ProductsPrivateRoute, UserPrivateRoute,
     LogoutPrivateRoute}
     from "./components/PrivateRoute";
-import Footer from "./components/Footer";
 
 
 function App() {
