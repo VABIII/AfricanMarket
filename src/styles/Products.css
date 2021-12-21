@@ -1,22 +1,35 @@
 .products {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
     /*border: 1px red solid;*/
-    height: 80vh;
-    justify-content: space-around;
+    /*height: 80vh;*/
+    /*justify-content: space-around;*/
 
 }
 
 
+.locations {
+    display: flex;
+    justify-content: space-around;
+}
 
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
+h1 {
+    text-align: center;
+}
 
-
-
-
-
+#add {
+    text-decoration: none;
+    color: lightgray;
+    text-align: center;
+}
 
 
 

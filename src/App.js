@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import './App.css';
+import './styles/App.css';
 import Header from "./components/Header";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
@@ -11,8 +11,9 @@ import ErrorPage from "./components/ErrorPage";
 import UserProfile from "./components/UserProfile";
 import About from "./components/About";
 import {ProductsPrivateRoute, UserPrivateRoute,
-    LogoutPrivateRoute, AboutPrivateRoute}
+    LogoutPrivateRoute}
     from "./components/PrivateRoute";
+import Footer from "./components/Footer";
 
 
 function App() {

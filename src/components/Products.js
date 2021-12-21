@@ -6,17 +6,17 @@ import { productArray } from "../initialValues/initialValues";
 import AddProduct from "./AddProduct";
 import Product from "./Product";
 import "../styles/Products.css";
-import ErrorPage from "./ErrorPage";
-import SignUp from "./SignUp";
-
 
 // TODO: Uncomment out useEffect after endpoint url is added to axios get request
+// TODO: Find somewhere to put that fucking add new product that doesn't look like dick
+// TODO: Add hover effects for any clickable elements on page
 
 const Products = props => {
     const [products, setProducts] = useState(productArray);
     const [ isNorthToggled, {toggle: toggleNorth, off: northOff}] = useToggle(false);
     const [ isSouthToggled, {toggle: toggleSouth, off: southOff}] = useToggle(false);
     const [ isCentralToggled, {toggle: toggleCentral, off: centralOff}] = useToggle(false);
+
 
     // useEffect(() => {
     //     fetchMovies();
@@ -61,44 +61,19 @@ const Products = props => {
                     <h3 onClick={centralOnCLick}>Central Africa</h3>
                     <h3 onClick={southOnCLick}>South Africa</h3>
                 </div>
-
-                    <Routes>
-                            <Route path="/add" element={<AddProduct/>}/>
-                    </Routes>
+            </div>
                 <div className="products">
-                    {
-                        isNorthToggled &&
-                        <nav>
-                            <NavLink to="/products/add">Add New Product</NavLink>
-                        </nav>
-                    }
                     {
                         isNorthToggled &&
                         products.map((product, i) => {
                             return (product.location === "North Africa") && <Product key={i} product={product}/>
                         })
                     }
-                </div>
-                <div className="products">
-                    {
-                        isCentralToggled &&
-                        <nav>
-                            <NavLink to="/products/add">Add New Product</NavLink>
-                        </nav>
-                    }
                     {
                         isCentralToggled &&
                         products.map((product, i) => {
                             return (product.location === "Central Africa") && <Product key={i} product={product}/>
                         })
-                    }
-                </div>
-                <div className="products">
-                    {
-                        isSouthToggled &&
-                        <nav>
-                            <NavLink to="/products/add">Add New Product</NavLink>
-                        </nav>
                     }
                     {
                         isSouthToggled &&
@@ -107,7 +82,12 @@ const Products = props => {
                         })
                     }
                 </div>
-            </div>
+            <nav>
+                <NavLink id="add" to="/products/add">Add New Product</NavLink>
+            </nav>
+            <Routes>
+                <Route path="/add" element={<AddProduct/>}/>
+            </Routes>
         </div>
     );
 };
