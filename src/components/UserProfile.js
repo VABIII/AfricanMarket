@@ -4,6 +4,8 @@ import {newUser} from "../initialValues/initialValues";
 import "../styles/UserProfile.css"
 
 
+// TODO: Uncomment useEffect and remove dummy data from useState
+
 
 const UserProfile = () => {
     const [user, setUser] = useState(newUser);
