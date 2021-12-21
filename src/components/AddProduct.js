@@ -80,6 +80,7 @@ const AddProduct = () => {
                     />
                     &nbsp;<button>Add</button>
                 </form>
+                <button onClick={() => window.location.href="/products"}>Cancel</button>
             </div>
         </div>
     );
