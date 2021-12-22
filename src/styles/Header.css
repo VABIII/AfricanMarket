@@ -4,114 +4,17 @@
 	margin: 1% 0 1% 0;
 }
 
-#home {
+nav a {
 	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
+	background-color: darkslategrey;
 	padding: 0.5rem;
-	text-align: center;
+	margin: 0.5rem;
 	text-decoration: none;
 	transition: all 0.8s ease-out;
 }
-
-#home:hover,
-#home:focus {
-	/*background-color: #fff;*/
+nav a:hover,
+a:focus {
+	background-color: #fff;
 	color: #333;
-}
-
-#login {
-	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.8s ease-out;
-}
-
-#login:hover,
-#login:focus {
-	/*background-color: #fff;*/
-	color: #333;
-}
-
-#products {
-	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.8s ease-out;
-}
-
-#products:hover,
-#products:focus {
-	/*background-color: #fff;*/
-	color: #333;
-}
-
-#user {
-	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.8s ease-out;
-}
-
-#user:hover,
-#user:focus {
-	/*background-color: #fff;*/
-	color: #333;
-}
-
-#about {
-	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.8s ease-out;
-}
-
-#about:hover,
-#about:focus {
-	/*background-color: #fff;*/
-	color: #333;
-}
-
-#logout {
-	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.8s ease-out;
-}
-
-#logout:hover,
-#logout:focus {
-	/*background-color: #fff;*/
-	color: #333;
-}
-
-#signup {
-	color: lightgrey;
-	flex: 1;
-	/*background-color: darkslategrey;*/
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.8s ease-out;
-}
-
-#signup:hover,
-#signup:focus {
-	/*background-color: #fff;*/
-	color: #333;
+	border-radius: 0.5rem;
 }
