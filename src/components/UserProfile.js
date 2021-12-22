@@ -5,6 +5,7 @@ import "../styles/UserProfile.css"
 
 
 // TODO: Uncomment useEffect and remove dummy data from useState
+// TODO: Position user card and finish styling page
 
 
 const UserProfile = () => {
@@ -24,11 +25,15 @@ const UserProfile = () => {
 
     return (
         <div className="user-container">
-            <h1>{user.firstName} {user.lastName}</h1>
-            <img src={user.avatarImg} alt="user"/>
-            <p>{user.businessName}</p>
-            <p>{user.jobTitle}</p>
-            <p>{user.location}</p>
+            <div className="user-info">
+                <div className="user">
+                    <h1 id="user-name">{user.firstName} {user.lastName}</h1>
+                    <img id="user-img" src={user.avatarImg} alt="user"/>
+                    <p>{user.businessName}</p>
+                    <p>{user.jobTitle}</p>
+                    <p>{user.location}</p>
+                </div>
+            </div>
         </div>
     );
 };

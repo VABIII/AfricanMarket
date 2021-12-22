@@ -7,7 +7,7 @@
 #home {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -17,14 +17,14 @@
 
 #home:hover,
 #home:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 
 #login {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -34,7 +34,7 @@
 
 #login:hover,
 #login:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 
@@ -42,7 +42,7 @@
 #products {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -52,7 +52,7 @@
 
 #products:hover,
 #products:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 
@@ -62,7 +62,7 @@
 #user {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -72,14 +72,14 @@
 
 #user:hover,
 #user:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 
 #about {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -89,14 +89,14 @@
 
 #about:hover,
 #about:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 
 #logout {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -106,14 +106,14 @@
 
 #logout:hover,
 #logout:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 
 #signup {
     color:lightgrey;
     flex: 1;
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -123,7 +123,7 @@
 
 #signup:hover,
 #signup:focus {
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #333;
 }
 

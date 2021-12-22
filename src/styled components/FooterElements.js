@@ -49,10 +49,6 @@ export const FooterLink = styled(Link)`
     text-decoration: none;
     margin: 0 0.5rem 0 .5rem;
     font-size: 14px;
-    &:hover {
-        color: #01bf71;
-        transition: 0.3 s ease-out;
-    }
 `;
 
 export const SocialLogo =styled(Link)`
@@ -70,20 +66,5 @@ export const WebsiteRights = styled.small`
     color:lightgrey;
 `;
 
-// #signup {
-//     color:lightgrey;
-//     flex: 1;
-//     background-color: darkslategrey;
-//     padding: 0.5rem;
-//     text-align: center;
-//     text-decoration: none;
-//     transition: all .8s ease-out;
-//
-// }
-//
-// #signup:hover,
-//     #signup:focus {
-//     background-color: #fff;
-//     color: #333;
-// }
+
 

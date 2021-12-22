@@ -1,6 +1,9 @@
 import React from 'react';
-import {FooterContainer, FooterLink, FooterLinkItems, FooterLinksContainer,
-    FooterLinksWrapper, FooterWrap, SocialLogo, WebsiteRights} from '../styled components/FooterElements';
+import "../styles/Footer.css";
+import {FooterContainer, FooterLink, FooterLinkItems,
+    FooterLinksContainer, FooterLinksWrapper, FooterWrap,
+    SocialLogo, WebsiteRights}
+    from '../styled components/FooterElements';
 
 
 const Footer = () => {
@@ -12,10 +15,10 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLink to = '/login'> Login</FooterLink>
-                            <FooterLink to = '/user'> User Profile </FooterLink>
-                            <FooterLink to = '/products'> Products</FooterLink>
-                            <FooterLink to = '/about'>About</FooterLink>
+                            <FooterLink className="link" to='/login'> Login</FooterLink>
+                            <FooterLink className="link" to='/user'> User Profile </FooterLink>
+                            <FooterLink className="link" to='/products'> Products</FooterLink>
+                            <FooterLink className="link" to='/about'>About</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
