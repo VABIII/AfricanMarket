@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import "../styles/AddProduct.css"
+import "../styles/AddProduct.css";
+import {newProductInitialValues} from "../initialValues/initialValues";
+
+// TODO: update product application state to reflect change to db
+// TODO: push to a location after submission
+// TODO: find a spot for add button that works with
 
 
-export const newProductInitialValues = {
-    productName: "",
-    productDescription: "",
-    productPrice: "",
-    location: ""
-};
 
 const AddProduct = () => {
     const [values, setValues] = useState(newProductInitialValues);
     console.log(values);
-
 
     const addNewProduct = newProd => {
         axios.post("", newProd)
@@ -24,7 +22,6 @@ const AddProduct = () => {
                 console.error(err)
             });
     };
-
 
     const onChange = evt => {
         const name = evt.target.name;
@@ -39,10 +36,7 @@ const AddProduct = () => {
     const onSubmit = evt => {
         evt.preventDefault()
             addNewProduct(values);
-        // TODO: update product application state to reflect change to db
-        // TODO: push to a location after submission
     };
-
 
     return (
         <div className="add-product-container">
@@ -50,39 +44,42 @@ const AddProduct = () => {
                 <h1>Add Product</h1>
             </div>
             <div className="add-product-form">
-                <form onSubmit={onSubmit}>
-                    <label>Product Name:&nbsp;</label>
+                <form>
+                    <strong><label>Product Name:&nbsp;</label></strong>
                     <input
                         type="text"
                         name="productName"
                         value={values.productName}
                         onChange={onChange}
                     />
-                    <label>&nbsp;Price:&nbsp;</label>
+                    <strong><label>&nbsp;Price:&nbsp;</label></strong>
                     <input
                         type="text"
                         name="productPrice"
                         value={values.productPrice}
                         onChange={onChange}
                     />
-                    <label>&nbsp;Product Description:&nbsp;</label>
+                    <strong><label>&nbsp;Description:&nbsp;</label></strong>
                     <input
                         type="text"
                         name="productDescription"
                         value={values.productDescription}
                         onChange={onChange}
                     />
-                    <label>&nbsp;Location:&nbsp;</label>
+                    <strong><label>&nbsp;Location:&nbsp;</label></strong>
                     <input
                         type="text"
                         name="location"
                         value={values.location}
                         onChange={onChange}
                     />
-                    &nbsp;<button>Add</button>
+                    &nbsp;
                 </form>
-                <button onClick={() => window.location.href="/products"}>Cancel</button>
-            </div>
+                <div>
+                    <button onClick={onSubmit}>Add</button>
+                    <button onClick={() => window.location.href="/products"}>Cancel</button>
+                </div>
+                </div>
         </div>
     );
 };

@@ -1,15 +1,10 @@
 import React, {useState} from 'react';
 import axios from "axios";
+import {loginInitialValues, signUpErrors} from "../initialValues/initialValues";
 
-
-export const loginInitialValues = {
-    username: "",
-    password: ""
-};
-
-export const signUpErrors = {
-    error: ""
-}
+// TODO: delete setToken and wlh and uncomment login()
+// TODO: Add a welcome message or something to greet user
+// TODO: Position login inputs and style page
 
 
 const Login = () => {
@@ -18,8 +13,8 @@ const Login = () => {
     const setToken = () => localStorage.setItem("token", "token");
 
 
-    const login = creds => {
-        axios.post(``, creds)
+    const login = credentials => {
+        axios.post(``, credentials)
             .then( res => {
                 const token = res.data.token;
                 localStorage.setItem("token", token);
@@ -29,7 +24,6 @@ const Login = () => {
                 setError(err.response.data);
             });
     };
-
 
     const onChange = evt => {
         const name = evt.target.name;
@@ -44,7 +38,6 @@ const Login = () => {
     const onSubmit = evt => {
         evt.preventDefault();
         // login(values);
-        // TODO: delete setToken and wlh and uncomment logi()
         setToken();
         window.location.href="/products";
     };

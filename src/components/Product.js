@@ -14,7 +14,7 @@ const Product = props => {
     return (
         <div className="product-container">
             <div className="product-display">
-                <h1 onClick={onClick}>{product.productName}</h1>
+                <h1 className="product" onClick={onClick}>{product.productName}</h1>
                 <div className="product-info-container">
                     {toggle && <ProductInfo product={product}/>}
                 </div>

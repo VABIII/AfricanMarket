@@ -1,25 +1,13 @@
-.products {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*border: 1px red solid;*/
-    /*height: 80vh;*/
-    /*justify-content: space-around;*/
-
-}
-
-
 .locations {
     display: flex;
     justify-content: space-around;
 }
-
 
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 
 h1 {
     text-align: center;
@@ -31,10 +19,22 @@ h1 {
     text-align: center;
 }
 
+#region {
+ color: lightgray;
+}
 
+#regions {
+    background-color: darkslategrey;
+}
 
+#regions:hover,
+#regions:focus {
+    color: lightgray;
+}
 
-
+input {
+    border: none;
+}
 
 
 
