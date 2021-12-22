@@ -1,6 +1,6 @@
 import React from 'react';
 import {FooterContainer, FooterLink, FooterLinkItems, FooterLinksContainer,
-    FooterLinksWrapper, FooterWrap, SocialLogo, WebsiteRights} from './FooterElements';
+    FooterLinksWrapper, FooterWrap, SocialLogo, WebsiteRights} from '../styled components/FooterElements';
 
 
 const Footer = () => {

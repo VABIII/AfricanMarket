@@ -13,7 +13,6 @@ export const FooterWrap = styled.div`
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -45,12 +44,8 @@ export const FooterLinkItems = styled.div`
     }
 `;
 
-export const FooterLinkTitle = styled.h1`
-    font-size: 16px;
-`;
-
 export const FooterLink = styled(Link)`
-    color: #fff;
+    color: lightgrey;
     text-decoration: none;
     margin: 0 0.5rem 0 .5rem;
     font-size: 14px;
@@ -58,6 +53,21 @@ export const FooterLink = styled(Link)`
         color: #01bf71;
         transition: 0.3 s ease-out;
     }
+`;
+
+export const SocialLogo =styled(Link)`
+    color:lightgrey;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.0rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+`;
+
+export const WebsiteRights = styled.small`
+    color:lightgrey;
 `;
 
 // #signup {
@@ -76,25 +86,4 @@ export const FooterLink = styled(Link)`
 //     background-color: #fff;
 //     color: #333;
 // }
-
-
-
-export const SocialLogo =styled(Link)`
-    color:#fff;
-    justify-self: start;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2.0rem;
-    display: flex;
-    align-items: center;
-    //margin: 0 10% 1% 10%;
-    font-weight: bold;
-`;
-
-export const WebsiteRights = styled.small`
-    color:#fff;
-    //margin-bottom: 16px;
-`;
-
-
 
