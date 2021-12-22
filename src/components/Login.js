@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from "axios";
 import {loginInitialValues, signUpErrors} from "../initialValues/initialValues";
-
+import {LogInDesign, H1Color, LIImg} from "../styled components/LoginElements"
 // TODO: delete setToken and wlh and uncomment login()
 // TODO: Add a welcome message or something to greet user
 // TODO: Position login inputs and style page
@@ -45,8 +45,10 @@ const Login = () => {
     return (
         <div className="login-container">
             <div className="login-title">
-                <h1>Login</h1>
+                <H1Color> Login now to see what we have to offer! </H1Color>
             </div>
+            <LIImg src='https://www.nycgo.com/images/venues/2392/harlemflea_51f__large.jpg' alt='market'/>
+            <LogInDesign>
             <div className="login-form">
                 <form onSubmit={onSubmit}>
                     <p>{error.error}</p>
@@ -69,8 +71,9 @@ const Login = () => {
                         />
                     </div>
                     <button>Login</button>
-                </form>
+                </form> 
             </div>
+            </LogInDesign>
         </div>
     );
 };

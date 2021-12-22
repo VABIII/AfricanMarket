@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import {signupInitialValues, signUpErrors} from "../initialValues/initialValues";
-
+import { SignUpHere, SignUpBoxes, H1Color, SUImg } from '../styled components/SignUpElements';
 
 // TODO: Add a welcome message or something to greet new user
 // TODO: Position signup inputs and style page
@@ -46,12 +46,19 @@ const SignUp = () => {
 
     return (
         <div>
+            <div>
+                <H1Color>
+                    Join now to experience the greatest things Africa can offer!
+                </H1Color>
+            </div>
+            <SUImg src='http://voxdev.org/sites/default/files/cover_images/casaburi_20nov_0.jpg' alt='African Market'/>
+            <SignUpHere>
             <div className="signup-form-container">
                 <h1>Sign Up</h1>
             </div>
             <div className="signup-form">
                 <form onSubmit={onSubmit}>
-                    <div>
+                    <SignUpBoxes>
                         <label>Username:&nbsp;</label>
                         <input
                             type="text"
@@ -59,8 +66,8 @@ const SignUp = () => {
                             value={values.username}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>First Name:&nbsp;</label>
                         <input
                             type="text"
@@ -68,8 +75,8 @@ const SignUp = () => {
                             value={values.firstName}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>Last Name:&nbsp;</label>
                         <input
                             type="text"
@@ -77,8 +84,8 @@ const SignUp = () => {
                             value={values.lastName}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>Business Name:&nbsp;</label>
                         <input
                             type="text"
@@ -86,8 +93,8 @@ const SignUp = () => {
                             value={values.businessName}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>Job Title:&nbsp;</label>
                         <input
                             type="text"
@@ -95,8 +102,8 @@ const SignUp = () => {
                             value={values.jobTitle}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>Location:&nbsp;</label>
                         <input
                             type="text"
@@ -104,8 +111,8 @@ const SignUp = () => {
                             value={values.location}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>Profile Picture:&nbsp;</label>
                         <input
                             type="text"
@@ -113,8 +120,8 @@ const SignUp = () => {
                             value={values.avatarImg}
                             onChange={onChange}
                         />
-                    </div>
-                    <div>
+                    </SignUpBoxes>
+                    <SignUpBoxes>
                         <label>Password:&nbsp;</label>
                         <input
                             type="text"
@@ -122,11 +129,12 @@ const SignUp = () => {
                             value={values.password}
                             onChange={onChange}
                         />
-                    </div>
+                    </SignUpBoxes>
                     <button>Submit</button>
                 </form>
                 <p>{errors.error}</p>
             </div>
+            </SignUpHere>
         </div>
     );
 };
