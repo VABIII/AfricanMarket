@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import axios from "axios";
+import axiosWithAuth from "../utils/axiosWithAuth";
 
 
 const Logout = () => {
@@ -11,16 +11,17 @@ const Logout = () => {
 
     //TODO: Delete above useEffect and uncomment out useEffect below
 
-    // useEffect(() => {
-    //     axios.post("")
-    //         .then( () => {
-    //             localStorage.removeItem("token");
-    //             window.location.href= "/";
-    //         })
-    //         .catch(err => {
-    //             console.error(err);
-    //         });
-    // },[]);
+    useEffect(() => {
+        axiosWithAuth()
+            .post("")
+            .then( () => {
+                localStorage.removeItem("token");
+                window.location.href= "/";
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    },[]);
 
     return (<div></div>);
 };

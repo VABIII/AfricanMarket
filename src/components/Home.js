@@ -1,30 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import {TitlePage, InfoStuff, MapImg, InfoStuff2} from "../styled components/HomeElements";
 import Footer from "./Footer"
 
-const TitlePage = styled.h1`
-  text-align: center;
-  margin-top: 3%;
-`;
-const MapImg = styled.img`
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: 10% 75%;
-`;
-const InfoStuff = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  border-style: solid;
-  background-color: #5DB0F1; 
-`;
-const InfoStuff2 = styled.div`
-border-style: solid;
-margin: 5% 20%;
-padding: 0 20%;
-background-color: #AC9A1F;
-`
+
 
 const Home = () => {
   return (

@@ -129,7 +129,7 @@ export const newUser = {
     businessName: "Patches, Inc",
     jobTitle: "Chief of Operations",
     location: "Burma",
-    avatarImg: "",
+    avatarImg: "https://media.istockphoto.com/photos/cheerful-fashionable-adult-man-in-city-setting-picture-id1310533180?b=1&k=20&m=1310533180&s=170667a&w=0&h=EdRuvIkrMifhyZJkHXf5Pk68ri44_g7OFnU8lIdbc-c=",
     password: ""
 };
 

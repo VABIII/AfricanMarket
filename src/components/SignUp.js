@@ -3,6 +3,11 @@ import axios from "axios";
 import {signupInitialValues, signUpErrors} from "../initialValues/initialValues";
 
 
+// TODO: Add a welcome message or something to greet new user
+// TODO: Position signup inputs and style page
+// TODO: Uncomment addNewUser() in onSubmit
+
+
 const SignUp = () => {
     const [values, setValues] = useState(signupInitialValues);
     const [user, setUser] = useState(signupInitialValues);

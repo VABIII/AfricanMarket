@@ -1,18 +1,26 @@
 .add-product-form {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 2%;
 }
 
+button {
+    border: none;
+    color:lightgrey;
+    flex: 1;
+    background-color: darkslategrey;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .8s ease-out;
+}
 
-
-
-
-
-
-
-
-
-
+button:hover,
+button:focus {
+    color: #333;
+    font-size: .9rem;
+}
 
 
 
