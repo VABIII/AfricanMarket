@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import './styles/App.css';
 import Header from "./components/Header";
+import ContactUs from "./components/ContactUs";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
 import Home from "./components/Home";
@@ -42,6 +43,7 @@ function App() {
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="*" element={<ErrorPage/>}/>
+          <Route path="/ContactUs" element={<ContactUs/>}/>
         </Routes>
       </div>
   )

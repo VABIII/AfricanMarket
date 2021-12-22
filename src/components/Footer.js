@@ -1,4 +1,3 @@
-import React from 'react';
 import "../styles/Footer.css";
 import {FooterContainer, FooterLink, FooterLinkItems,
     FooterLinksContainer, FooterLinksWrapper, FooterWrap,
@@ -10,8 +9,6 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <SocialLogo to= '/'> African MarketPlace</SocialLogo>
-                <WebsiteRights> African MarketPlace © {new Date().getFullYear()}</WebsiteRights>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
@@ -22,16 +19,11 @@ const Footer = () => {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                    <SocialLogo to= '/'> African MarketPlace</SocialLogo>
+                    <WebsiteRights> African MarketPlace © {new Date().getFullYear()}</WebsiteRights>                
             </FooterWrap>
         </FooterContainer>
     );
 };
 
 export default Footer;
-
-
-
-
-
-
-
