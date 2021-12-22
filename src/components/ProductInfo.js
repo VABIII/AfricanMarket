@@ -4,7 +4,6 @@ import "../styles/ProductInfo.css"
 
 const ProductInfo = props => {
     const {product} = props;
-    console.log(product)
 
     return (
         <div className="product-info">

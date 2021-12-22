@@ -11,7 +11,6 @@
 
 .product-display {
     text-align: center;
-    /*border: green solid 1px;*/
     padding: 10%;
     margin: 5%;
 }
@@ -20,9 +19,49 @@
     text-align: center;
 }
 
+h3 {
+    color:lightgrey;
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .8s ease-out;
+}
 
+h3:hover,
+h3:focus {
+    color: #333;
+}
 
+#add {
+    color:lightgrey;
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .8s ease-out;
+}
 
+#add:hover,
+#add:focus {
+    color: #333;
+}
+
+.product {
+    border: none;
+    color:lightgrey;
+    flex: 1;
+    background-color: darkslategrey;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .8s ease-out;
+}
+
+.product:hover,
+.product:focus {
+    color: #333;
+}
 
 
 

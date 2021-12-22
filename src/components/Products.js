@@ -6,10 +6,10 @@ import { productArray } from "../initialValues/initialValues";
 import AddProduct from "./AddProduct";
 import Product from "./Product";
 import "../styles/Products.css";
+import styled from 'styled-components';
 
 // TODO: Uncomment out useEffect after endpoint url is added to axios get request
 // TODO: Find somewhere to put that fucking add new product that doesn't look like dick
-// TODO: Add hover effects for any clickable elements on page
 
 const Products = props => {
     const [products, setProducts] = useState(productArray);
@@ -55,11 +55,11 @@ const Products = props => {
     return (
         <div>
             <div className="regions">
-                <h1>Regions</h1>
+                <h1 id="regions">Regions</h1>
                 <div className="locations">
-                    <h3 onClick={northOnCLick}>North Africa</h3>
-                    <h3 onClick={centralOnCLick}>Central Africa</h3>
-                    <h3 onClick={southOnCLick}>South Africa</h3>
+                    <h3 className="region" onClick={northOnCLick}>North Africa</h3>
+                    <h3 className="region" onClick={centralOnCLick}>Central Africa</h3>
+                    <h3 className="region" onClick={southOnCLick}>South Africa</h3>
                 </div>
             </div>
                 <div className="products">
