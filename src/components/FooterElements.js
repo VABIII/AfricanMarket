@@ -11,8 +11,9 @@ export const FooterWrap = styled.div`
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
+    border: 1px solid red;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -31,12 +32,10 @@ export const FooterLinksWrapper = styled.div`
 `;
 
 export const FooterLinkItems = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     margin: 18px;
     text-align:left;
-    width: 160px;
     box-sizing: border-box;
     color: #fff;
     @media screen and (max-midth: 460px){
@@ -48,19 +47,36 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h1`
     font-size: 16px;
-    margin-bottom: 16px;
 `;
 
 export const FooterLink = styled(Link)`
     color: #fff;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    margin: 0 0.5rem 0 .5rem;
     font-size: 14px;
     &:hover {
         color: #01bf71;
         transition: 0.3 s ease-out;
     }
 `;
+
+// #signup {
+//     color:lightgrey;
+//     flex: 1;
+//     background-color: darkslategrey;
+//     padding: 0.5rem;
+//     text-align: center;
+//     text-decoration: none;
+//     transition: all .8s ease-out;
+//
+// }
+//
+// #signup:hover,
+//     #signup:focus {
+//     background-color: #fff;
+//     color: #333;
+// }
+
 
 
 export const SocialLogo =styled(Link)`
@@ -71,13 +87,13 @@ export const SocialLogo =styled(Link)`
     font-size: 2.0rem;
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    //margin: 0 10% 1% 10%;
     font-weight: bold;
 `;
 
 export const WebsiteRights = styled.small`
     color:#fff;
-    margin-bottom: 16px;
+    //margin-bottom: 16px;
 `;
 
 

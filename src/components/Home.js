@@ -24,7 +24,7 @@ border-style: solid;
 margin: 5% 20%;
 padding: 0 20%;
 background-color: #AC9A1F;
-`
+`;
 
 const Home = () => {
   return (
