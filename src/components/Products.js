@@ -6,6 +6,7 @@ import { productArray } from "../initialValues/initialValues";
 import AddProduct from "./AddProduct";
 import Product from "./Product";
 import "../styles/Products.css";
+import styled from 'styled-components';
 
 // TODO: Uncomment out useEffect after endpoint url is added to axios get request
 // TODO: Find somewhere to put that fucking add new product that doesn't look like dick
