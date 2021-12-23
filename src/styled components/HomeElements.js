@@ -6,7 +6,7 @@ export const TitlePage = styled.h1`
 `;
 export const MapImg = styled.img`
   width: 100%;
-  height: 500px;
+  height: 65vh;
   object-fit: cover;
   object-position: 10% 75%;
 `;

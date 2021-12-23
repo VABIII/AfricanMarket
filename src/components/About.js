@@ -1,11 +1,8 @@
 import React from "react";
-import { AboutPage, AboutPage2, ImageThing } from "../styled components/AboutElements";
-// TODO: Flesh out page w/ some bullshit and add in some fake contact info so we don't make a liar out of the
-// TODO: of the 'contact us' link in Home page footer
+import { AboutPage, AboutPage2, ImageThing, StyledLi } from "../styled components/AboutElements";
 
-// done - Lorenzo
 
-const About = (props) => {
+const About = () => {
   return (
     <div>
       <AboutPage>
@@ -25,15 +22,15 @@ const About = (props) => {
           <h3> 
               How to reach out to us: 
           </h3>
-        <li> 
-          <li>Business Address: 1363 Filbert Street Philadelphia, PA 19108</li>
-          <li>
+        <div>
+          <StyledLi>Business Address: 1363 Filbert Street Philadelphia, PA 19108</StyledLi>
+          <StyledLi>
             <a href="tel:6108107015">Phone: 610-810-7015</a>
-          </li>
-          <li>
+          </StyledLi>
+          <StyledLi>
           <a href="mailto:MildredMMoore@teleworm.us"> Email: MildredMMoore@teleworm.us </a> 
-            </li>
-        </li>
+            </StyledLi>
+        </div>
       </ul>
       </AboutPage2>
     </div>
