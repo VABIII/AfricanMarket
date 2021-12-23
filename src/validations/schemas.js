@@ -35,3 +35,15 @@ export const signupSchema = yup.object().shape({
 		.required('Password is required')
 		.min(5, 'Password must be at least 5 characters'),
 });
+
+export const addProductSchema = yup.object().shape({
+	productName: yup.string().required('Product name is required'),
+	productDescription: yup.string().required('Product description is required'),
+	productPrice: yup.string().required('Product price is required'),
+	location: yup.string().required('Product locations is required'),
+});
+
+// productName: '',
+// 	productDescription: '',
+// 	productPrice: '',
+// 	location: '',
