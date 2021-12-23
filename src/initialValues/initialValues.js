@@ -1,6 +1,6 @@
 export const productArray = [
 	{
-		productName: 'Banana',
+		productName: 'North Banana',
 		productPrice: '$10',
 		location: 'North Africa',
 		productDescription:
@@ -12,7 +12,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'South Banana',
 		productPrice: '$10',
 		location: 'South Africa',
 		productDescription:
@@ -24,7 +24,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'Central Banana',
 		productPrice: '$10',
 		location: 'Central Africa',
 		productDescription:
@@ -36,7 +36,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'South Banana',
 		productPrice: '$10',
 		location: 'South Africa',
 		productDescription:
@@ -48,7 +48,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'Central Banana',
 		productPrice: '$10',
 		location: 'Central Africa',
 		productDescription:
@@ -60,7 +60,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'North Banana',
 		productPrice: '$10',
 		location: 'North Africa',
 		productDescription:
@@ -72,7 +72,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'Central Banana',
 		productPrice: '$10',
 		location: 'Central Africa',
 		productDescription:
@@ -84,7 +84,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'South Banana',
 		productPrice: '$10',
 		location: 'South Africa',
 		productDescription:
@@ -96,7 +96,7 @@ export const productArray = [
 	},
 
 	{
-		productName: 'Banana',
+		productName: 'Central Banana',
 		productPrice: '$10',
 		location: 'Central Africa',
 		productDescription:
