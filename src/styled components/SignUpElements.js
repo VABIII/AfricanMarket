@@ -16,6 +16,7 @@ background: #B2945B;
 margin: 0 40%;
 padding-bottom: 1%;
 padding-top: 1%;
+border-radius: 1.8em;
 `
 
 export const SignUpBoxes = styled.div`
