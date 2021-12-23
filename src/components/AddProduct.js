@@ -130,7 +130,7 @@ const AddProduct = () => {
 						placeholder="Enter Location"
 					/>
 				</form>
-				<div className="btns">
+				<div className="btns animate__animated animate__fadeInUp">
 					<button className="add" disabled={disabled} onClick={onSubmit}>
 						Add
 					</button>

@@ -18,7 +18,8 @@
 
 .add-product-form input {
 	height: 1.9em;
-	border-radius: 3em;
+	width: 50%;
+	border-radius: 0.5em;
 	text-align: center;
 }
 
@@ -42,7 +43,8 @@
 	text-decoration: none;
 	transition: all 0.8s ease-out;
 }
-
+*/
+/* 
 button:hover,
 button:focus {
 	color: #333;
@@ -61,11 +63,19 @@ button:focus {
 	color: white;
 }
 
+.btns .add:hover {
+	background-color: rgb(88, 213, 88);
+}
+
+.btns .add:disabled {
+	background-color: lightgrey;
+}
+
 .btns .cancel {
 	background-color: crimson;
 	color: white;
 }
 
-.btns .add:disabled {
-	background-color: lightgrey;
+.btns .cancel:hover {
+	background-color: rgb(227, 87, 115);
 }
