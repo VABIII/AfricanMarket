@@ -27,8 +27,12 @@ const About = (props) => {
           </h3>
         <li> 
           <li>Business Address: 1363 Filbert Street Philadelphia, PA 19108</li>
-          <li>Phone: 610-810-7015</li>
-          <li>Email: MildredMMoore@teleworm.us</li>
+          <li>
+            <a href="tel:6108107015">Phone: 610-810-7015</a>
+          </li>
+          <li>
+          <a href="mailto:MildredMMoore@teleworm.us"> Email: MildredMMoore@teleworm.us </a> 
+            </li>
         </li>
       </ul>
       </AboutPage2>

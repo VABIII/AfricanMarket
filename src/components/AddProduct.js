@@ -5,7 +5,9 @@ import {newProductInitialValues} from "../initialValues/initialValues";
 
 // TODO: update product application state to reflect change to db
 // TODO: push to a location after submission
-// TODO: find a spot for add button that works with
+// TODO: find a spot for add button that works with --- will this change be on this page or the products page? -Lorenzo
+
+// i think it should be added to the top of the page -- lorenzo. 
 
 
 
