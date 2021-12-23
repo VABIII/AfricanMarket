@@ -40,7 +40,7 @@ const Footer = () => {
 									</FooterLink>
 								</>
 							)}
-
+							{/* Below will show if user is logged in */}
 							{token && (
 								<>
 									<FooterLink className="link" to="/products">
@@ -54,8 +54,6 @@ const Footer = () => {
 									</FooterLink>
 								</>
 							)}
-
-							{/* If logged in */}
 						</FooterLinkItems>
 					</FooterLinksWrapper>
 				</FooterLinksContainer>
