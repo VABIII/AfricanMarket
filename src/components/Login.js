@@ -11,9 +11,9 @@ import {
 	loginInitialValues,
 	signUpErrors,
 	initialLoginFormErrors,
-	initialLoginDisabled,
+	initialFormDisabled,
 } from '../initialValues/initialValues';
-import '../styles/Login.css';
+import '../styles/Disabled.css';
 
 // TODO: delete setToken and wlh and uncomment login()
 // TODO: Add a welcome message or something to greet user
@@ -26,7 +26,7 @@ const Login = () => {
 	const [loginFormErrors, setLoginFormErrors] = useState(
 		initialLoginFormErrors
 	);
-	const [disabled, setDisabled] = useState(initialLoginDisabled);
+	const [disabled, setDisabled] = useState(initialFormDisabled);
 	const setToken = () => localStorage.setItem('token', 'token');
 
 	const login = (credentials) => {

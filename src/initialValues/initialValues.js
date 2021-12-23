@@ -153,4 +153,15 @@ export const initialLoginFormErrors = {
 	password: '',
 };
 
-export const initialLoginDisabled = true;
+export const initialSignupFormErrors = {
+	username: '',
+	firstName: '',
+	lastName: '',
+	businessName: '',
+	jobTitle: '',
+	location: '',
+	avatarImg: '',
+	password: '',
+};
+
+export const initialFormDisabled = true;
