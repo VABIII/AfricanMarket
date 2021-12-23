@@ -18,6 +18,7 @@ import '../styles/Login.css';
 // TODO: delete setToken and wlh and uncomment login()
 // TODO: Add a welcome message or something to greet user
 // TODO: Position login inputs and style page
+// TODO: Remove login initial values
 
 const Login = () => {
 	const [values, setValues] = useState(loginInitialValues);
