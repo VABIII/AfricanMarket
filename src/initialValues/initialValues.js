@@ -164,4 +164,11 @@ export const initialSignupFormErrors = {
 	password: '',
 };
 
+export const initialAddProductFormErrors = {
+	productName: '',
+	productDescription: '',
+	productPrice: '',
+	location: '',
+};
+
 export const initialFormDisabled = true;
