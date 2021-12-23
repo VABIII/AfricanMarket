@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as yup from 'yup';
 import { addProductSchema } from '../validations/schemas';
 import '../styles/AddProduct.css';
+import 'animate.css';
 import {
 	newProductInitialValues,
 	initialAddProductFormErrors,
@@ -76,59 +77,67 @@ const AddProduct = () => {
 	return (
 		<div className="add-product-container">
 			<div className="product-form-title">
-				<h1>Add Product</h1>
+				<h1 className="animate__animated animate__bounceInRight">
+					Add Product
+				</h1>
 			</div>
 			<div className="add-product-form">
-				<div>
-					<div>{addProductFormErrors.productNamet}</div>
-					<div>{addProductFormErrors.productDescription}</div>
-					<div>{addProductFormErrors.productPrice}</div>
-					<div>{addProductFormErrors.location}</div>
+				<div className="add-product-errors">
+					<div>
+						<p>{addProductFormErrors.productName}</p>
+					</div>
+					<div>
+						<p>{addProductFormErrors.productDescription}</p>
+					</div>
+					<div>
+						<p>{addProductFormErrors.productPrice}</p>
+					</div>
+					<div>
+						<p>{addProductFormErrors.location}</p>
+					</div>
 				</div>
-				<form>
-					<strong>
-						<label>Product Name:&nbsp;</label>
-					</strong>
+				<form className="animate__animated animate__fadeInDown">
+					<label>Name</label>
 					<input
 						type="text"
 						name="productName"
 						value={values.productName}
 						onChange={onChange}
+						placeholder="Enter Name"
 					/>
-					<strong>
-						<label>&nbsp;Price:&nbsp;</label>
-					</strong>
+					<label>Price</label>
 					<input
 						type="text"
 						name="productPrice"
 						value={values.productPrice}
 						onChange={onChange}
+						placeholder="Enter Price"
 					/>
-					<strong>
-						<label>&nbsp;Description:&nbsp;</label>
-					</strong>
+					<label>Description</label>
 					<input
 						type="text"
 						name="productDescription"
 						value={values.productDescription}
 						onChange={onChange}
+						placeholder="Enter Description"
 					/>
-					<strong>
-						<label>&nbsp;Location:&nbsp;</label>
-					</strong>
+					<label>Location</label>
 					<input
 						type="text"
 						name="location"
 						value={values.location}
 						onChange={onChange}
+						placeholder="Enter Location"
 					/>
-					&nbsp;
 				</form>
-				<div>
-					<button disabled={disabled} onClick={onSubmit}>
+				<div className="btns">
+					<button className="add" disabled={disabled} onClick={onSubmit}>
 						Add
 					</button>
-					<button onClick={() => (window.location.href = '/products')}>
+					<button
+						className="cancel"
+						onClick={() => (window.location.href = '/products')}
+					>
 						Cancel
 					</button>
 				</div>

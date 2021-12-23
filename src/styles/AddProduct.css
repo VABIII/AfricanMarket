@@ -1,60 +1,71 @@
 .add-product-form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 2%;
+	background-color: rgb(222, 192, 73);
+	border-radius: 3em;
+	max-width: 30%;
+	margin: 0 auto;
+	color: white;
+	font-size: 1.2em;
 }
 
-button {
-    border: none;
-    color:lightgrey;
-    flex: 1;
-    background-color: darkslategrey;
-    padding: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all .8s ease-out;
+.add-product-form label {
+	display: block;
+	margin: 0.5em;
+}
+
+.add-product-form input {
+	height: 1.9em;
+	border-radius: 3em;
+	text-align: center;
+}
+
+.add-product-form .btns {
+	margin-top: 1.2em;
+	margin-right: 0.5em;
+}
+
+.add-product-errors {
+	color: crimson;
+	font-size: 0.8em;
+}
+
+/* button {
+	border: none;
+	color: lightgrey;
+	flex: 1;
+	background-color: darkslategrey;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.8s ease-out;
 }
 
 button:hover,
 button:focus {
-    color: #333;
-    font-size: .9rem;
+	color: #333;
+	font-size: 0.9rem;
+} */
+
+.btns button {
+	width: 30%;
+	font-size: 0.8em;
+	margin: 0.2rem;
+	border-radius: 0.5em;
 }
 
+.btns .add {
+	background-color: rgb(19, 213, 19);
+	color: white;
+}
 
+.btns .cancel {
+	background-color: crimson;
+	color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btns .add:disabled {
+	background-color: lightgrey;
+}
