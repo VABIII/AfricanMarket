@@ -127,8 +127,8 @@ export const newProductInitialValues = {
 };
 
 export const loginInitialValues = {
-	username: '',
-	password: '',
+	username: 'Vernon',
+	password: 'Vernon',
 };
 
 export const newUser = {
