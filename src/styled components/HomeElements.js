@@ -16,6 +16,7 @@ export const InfoStuff = styled.div`
 	flex-direction: column;
 `;
 export const InfoStuff2 = styled.div`
-	margin: 5% 20%;
-	padding: 0 20%;
+	padding: 5em;
+	width: 50%;
+	margin: 0 auto;
 `;

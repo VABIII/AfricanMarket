@@ -6,6 +6,7 @@ import {
 	InfoStuff2,
 } from '../styled components/HomeElements';
 import Footer from './Footer';
+import '../styles/Home.css';
 
 const Home = () => {
 	return (
@@ -23,7 +24,6 @@ const Home = () => {
 				<InfoStuff2>
 					<h2> Who we are? </h2>
 					<p>
-						{' '}
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -36,7 +36,6 @@ const Home = () => {
 				<InfoStuff2>
 					<h2> Where we are? </h2>
 					<p>
-						{' '}
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -49,7 +48,6 @@ const Home = () => {
 				<InfoStuff2>
 					<h2> How to contact us? </h2>
 					<p>
-						{' '}
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
