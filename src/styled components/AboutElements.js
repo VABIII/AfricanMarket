@@ -1,30 +1,22 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AboutPage = styled.div`
-text-align: center;
-background: #800000;
-//border: #AC9A1F;
-border-radius: 5%;
-padding: 2%;  
-
-margin: 1% 30%;
-`
+	text-align: center;
+	padding: 2%;
+	margin: 1% 30%;
+`;
 
 export const AboutPage2 = styled.div`
-text-align: center;
-background: #800000;
-margin: 1% 30%;
-padding: 1% 0;
-border-radius: 1.8em;
-`
+	text-align: center;
+	margin: 1% 30%;
+	padding: 1% 0;
+`;
 
 export const ImageThing = styled.img`
-width: 80%;
-height: 80%;
-`
+	width: 80%;
+	height: 80%;
+`;
 
 export const StyledLi = styled.li`
-list-style-type: none;    
-`
-
-
+	list-style-type: none;
+`;
