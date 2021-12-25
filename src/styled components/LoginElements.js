@@ -10,7 +10,7 @@ export const LogInDesign = styled.div`
 `;
 
 export const H1Color = styled.h1`
-	background: black;
+	// background: black;
 `;
 
 export const LIImg = styled.img`
