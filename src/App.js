@@ -9,6 +9,7 @@ import Products from './components/Products';
 import SignUp from './components/SignUp';
 import ErrorPage from './components/ErrorPage';
 import UserProfile from './components/UserProfile';
+import Footer from './components/Footer';
 import About from './components/About';
 import {
 	ProductsPrivateRoute,
@@ -43,6 +44,7 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }
