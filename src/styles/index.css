@@ -1,5 +1,8 @@
 body {
 	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Julius Sans One', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -10,6 +13,10 @@ body {
 		darkslategrey,
 		rgba(157, 72, 157, 0.674)
 	);
+}
+
+.footer {
+	margin-top: auto;
 }
 
 html {
