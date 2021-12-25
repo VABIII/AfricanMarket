@@ -9,4 +9,4 @@ While in the root directory of the project, run `npm install` or `npm i` to inst
 ## Meet the Team
 
 This repository project was worked on and maintained by [Vernon Bengtson](https://github.com/VABIII),
-[Lorenzo Corleone Gallo](https://github.com/lgallo95) and [Aaron Mendez](https://github.com/aaronamendez). Feel free to reach out to them with any questions you may have.
+[Lorenzo Corleone Gallo](https://github.com/lgallo95), [Ruth Muiruri](https://github.com/waithira001) and [Aaron Mendez](https://github.com/aaronamendez). Feel free to reach out to them with any questions you may have.
